@@ -1,0 +1,574 @@
+/* Global Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-style: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+input:focus { 
+ 	outline: none;
+}
+#wrapper {
+	width: 1265px;
+	margin: auto;
+}
+
+/* Global Styles */
+
+/* Navigation Bar */
+nav {
+	width: 275px;
+	float: left;
+	display: inline-block;
+}
+.navbar {
+	padding: 0 20px; 
+}
+.navbar #logo {
+	width: 49px;
+	height: 49px;
+	padding: 2px 0;
+	display: block;
+	text-align: center;
+	line-height: 56px;
+}
+.navbar #logo a {
+	font-size: 15px;
+    color: rgba(29,161,242,1.00);
+}
+.navbar ul {
+	margin: 2px 0 5px;
+}
+.navbar ul a {
+	padding: 4px 0;
+	text-transform: capitalize;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(20, 23, 26);
+    display: inline-block;
+}
+.navbar ul a li {
+	padding: 10px;	
+	min-width: 100px;
+}
+.navbar ul a:hover, .navbar #logo:hover {
+	color: rgba(29,161,242,1.00);
+	background-color: rgba(29,161,242,0.1);
+	border-radius: 9999px;
+}
+.navbar ul #active {
+	color: rgba(29,161,242,1.00);
+}
+.navbar ul a li span {
+	margin: 0 15px 0 20px;
+}
+.navbar ul a li i {
+	width: 30px;
+	height: 30px;
+}
+.navbar ul a li img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	display: inline-block;
+}
+.navbar #tweet {
+	margin: 5px 0;
+	background-color: rgb(29, 161, 242);
+	border-radius: 9999px;
+	padding: 0 30px;
+	min-height: 49px;
+	width: 130px;
+}
+.navbar #icon {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 46px;
+    min-width: 70%; 	
+}
+.navbar #tweet:hover {
+	background-color: rgb(26,145,218);
+}
+
+/* Navigation Bar */
+
+/* Status */
+
+main {
+	width: 598px;
+	float: left;
+	display: inline-block;
+}
+main header {
+	font-size: 19px;
+	font-weight: 800;
+	line-height: 54px;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid rgb(230, 236, 240);
+}
+main header a p {
+	float: left;
+	display: inline-block;
+    color: rgb(20, 23, 26);
+    padding-left: 10px;
+}
+main header i {
+	color: rgba(29,161,242,1.00);
+	text-align: center;
+}
+main header #star {
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+	float: right;
+	text-align: center;
+	margin-top: 5px;
+	line-height: 39px;
+	margin-right: 10px;
+}
+main header #star:hover {
+	color: rgba(29,161,242,1.00);
+	background-color: rgba(29,161,242,0.1);
+	border-radius: 9999px;
+}
+main #status #mind {
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+}
+main #status #mind #top div {
+	height: 117px;
+	display: inline-block;
+	float: left;
+}
+main #status #mind #top img {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	margin: 0 5px;
+	display: inline-block;
+}
+main #status #mind #top input {
+	padding: 10px;
+	width: 505px;
+	font-size: 19px;
+}
+main #status #mind #top input::placeholder {
+	color: #9197a3;
+}
+main #status #mind #top input:focus::placeholder {
+	color: #bdc1c9;
+}
+main #status #mind #bottom {
+	margin-top: 10px;
+	display: inline-block;
+	width: 525px;
+}
+main #status #mind #bottom ul {
+	float: left;
+	display: inline-block;
+}
+main #status #mind #bottom ul li {
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+}
+main #status #mind #bottom ul li a {
+	color: rgba(29,161,242,1.00);
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 39px;
+}
+main #status #mind #bottom .emotions {
+	float: right;
+	display: inline-block;
+}
+main #status #mind #bottom .emotions i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 37px;
+    color: #8fd8f3;
+    margin-right: 13px;
+}
+main #status #mind #bottom .emotions div {
+	display: inline-block;
+	text-align: center; 
+	float: right;
+	width: 70px;
+	height: 37px;
+	line-height: 37px;
+	background-color: #8fd8f3;
+	border-radius: 9999px;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+    font-weight: bold;
+}
+.b {
+	background-color: rgb(230, 236, 240);
+	width: 100%;
+	height: 10px;
+}
+
+/* /Status */
+
+/* Timeline */
+
+main {
+	border-right: 1px solid rgb(230, 236, 240);
+	border-left: 1px solid rgb(230, 236, 240);
+}
+main .posts {
+	padding: 15px 10px 0;
+	border-bottom: 1px solid rgb(230, 236, 240);
+}
+main .posts:hover {
+	cursor: pointer;
+	background-color: rgb(245,248,250);
+}
+main .posts .top-post {
+	color: rgb(101, 119, 134);
+	font-size: 13px;
+}
+main .posts .top-post i {
+	width: 49px;
+	margin: 0 5px;
+	text-align: right;
+}
+main .posts .top-post a {
+	color: rgb(101, 119, 134);
+}
+main .posts .top-post a:hover {
+	text-decoration: underline;
+}
+main .posts .post {
+	margin-top: 7px;
+	width: 100%;
+	display: inline-block;
+}
+main .posts .post .rest {
+	float: right;
+	width: 519px;
+	display: inline-block;
+	margin: 0 5px;
+	padding-bottom: 15px;
+}
+main .posts .post .tweet-photo {
+	height: 392px;
+	float: left;
+	display: inline-block;
+	mat
+}
+main .posts .post .tweet-photo .top-photo {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+}
+.b-v {
+	width: 3px;
+	height: 360px;
+	background-color: rgb(204, 214, 221);
+}
+div .b-v {
+	text-align: center;
+	margin-left: 22px;
+}
+main .posts .post .rest .name h5, main .posts .post .rest .name p {
+	float: left;
+}
+main .posts .post .rest .name {
+	margin-bottom: 2px;
+	display: inline-block;
+	width: 100%;
+}
+main .posts .post .rest .name div {
+	float: right;
+	margin-left: 20px;
+	color: rgb(101, 119, 134);
+	margin-top: 2px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+} 
+main .posts .post .rest .name div:hover {
+	cursor: pointer;
+	color: rgb(27, 149, 224);
+	background-color: rgba(29,161,242,0.1);
+	border-radius: 50%;
+}
+main .posts .post .rest .name h5 a {
+	font-size: 15px;
+	color: rgb(20, 23, 26);
+}
+main .posts .post .rest .name p {
+	font-size: 15px;
+	font-weight: 400;
+	color:rgb(101, 119, 134);
+	margin-left: 5px;
+}
+main .posts .post .rest .name p a {
+	color:rgb(101, 119, 134);
+}
+main .posts .post .rest .name a:hover {
+	text-decoration: underline;
+}
+main .posts .post .rest .banner p {
+	text-align: right;
+	font-size: 15px;
+	font-weight: 400;
+	color: rgb(20, 23, 26)
+}
+main .posts .post .rest .banner #bat {
+	text-align: left;
+}
+main .posts .post .rest .banner img {
+	object-fit: cover;
+	width: 100%;
+	height: 291px;
+	margin-top: 10px;
+	border-radius: 14px;
+	border: 1px solid rgb(204, 214, 221);
+}
+main .posts .post .rest .reactions {
+	margin-top: 15px;
+	color: rgb(101, 119, 134);
+	font-size: 15px;
+	font-weight: 400;
+}
+main .posts .post .rest .reactions div {
+	display: inline-block;
+	width: 99px;
+}
+main .posts .post .rest .reactions div:hover {
+	color: rgb(27, 149, 224);
+	cursor: pointer;
+}
+main .posts .post .rest .reactions span {
+	margin-left: 13px;
+}
+main .posts .post .thread {
+	width: 100%;
+	margin-top: 16px;
+	display: inline-block;
+	height: 50px;
+	padding-left: 0 10px;
+}
+main .posts .post .thread:hover {
+	background-color: rgba(0,0,0,0.03);
+}
+main .posts .post .thread .bottom-photo {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	display: inline-block;
+	margin-left: 9px;
+}
+main .posts .post .thread a {
+	color: rgb(27, 149, 224);
+	display: inline-block;
+	margin-left: 18px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/* /Timeline */
+
+/* Trends */
+
+aside {
+	width: 360px;
+	margin: 0 10px 0 20px;
+	float: right;
+	display: inline-block;
+}
+aside #search {
+	width: 100%;
+	margin-top: 6px;
+	border-radius: 9999px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+aside #search div, aside #search input {
+	background-color: rgb(230, 236, 240);
+	height: 42px;
+}
+aside #search div {
+	float: left;
+	display: inline-block;
+	width: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: rgb(101, 119, 134);
+	border-radius: 9999px 0 0 9999px;
+}
+aside #search input {
+	float: left;
+	display: inline-block;
+	width: 316px;
+	border-radius: 0 9999px 9999px 0;
+}
+aside #search input::placeholder {
+	color: #9197a3;
+	font-size: 15px;
+}
+aside #search input:focus {
+	background-color: #fff;
+	border: 1px solid rgb(27, 149, 224);
+}
+aside .trends {
+    background-color: rgb(245, 248, 250);
+    width: 100%;
+    display: inline-block;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+aside .trends .title {
+	display: inline-block;
+	padding: 10px;
+	width: 340px;
+    border-bottom: 1px solid rgb(230, 236, 240);
+}
+aside .trends .title h2 {
+	font-size: 19px;
+	font-weight: 800;
+	float: left;
+	display: inline-block;
+}
+aside .trends .title div {
+	float: right;
+	display: inline-block;
+    color: rgba(29,161,242,1.00);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+aside .trends .title div:hover {
+	cursor: pointer;
+	background-color: rgba(29,161,242,0.1);
+	border-radius: 50%;
+}
+aside .trends ul li {
+	border-bottom: 1px solid rgb(230, 236, 240);
+	width: 338px;
+	padding: 10px;
+	display: inline-block;
+}
+aside .trends ul li:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.03);
+}
+aside .trends ul li .trending {
+	color: rgb(101, 119, 134);
+    font-size: 13px;
+    font-weight: 400;
+}
+aside .trends ul li div {
+	font-size: 15px;
+	font-weight: bold;
+    color: rgb(20, 23, 26);
+    padding-top: 2px;
+}
+aside .trends ul li .diff-align {
+	text-align: right;
+}
+aside .trends ul li .no-of-tweets {
+	font-size: 15px;
+	font-weight: 400;
+    color: rgb(101, 119, 134);
+}
+aside .trends .more {
+	font-size: 15px;
+	font-weight: 400;
+	width: 338px;
+	padding: 15px 10px;
+}
+aside .trends .more:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.03);
+}
+aside .trends .more a {
+	color: rgba(29,161,242,1.00);
+}
+aside .trends ul li img {
+	width: 41px;
+	height: 41px;
+	border-radius: 50%;
+	float: left;
+	display: inline-block;
+	margin-top: 3px;
+}
+aside .trends ul li .at {
+	float: left;
+	display: inline-block;
+	width: 287px;
+	margin: 0 5px;
+}
+aside .trends ul li .at h3 {
+    font-size: 15px;
+    color: rgb(20, 23, 26);
+    font-weight: bold;
+}
+aside .trends ul li .at h3:hover {
+	text-decoration: underline;
+}
+aside .trends ul li .at h3 i {
+	color: rgba(29,161,242,1.00)
+}
+aside .trends ul li .at a p{
+    font-size: 15px;
+	font-weight: 400;
+    color: rgb(101, 119, 134);
+}
+aside .trends ul li .at div {
+	float: right;
+	display: inline-block;
+	font-size: 15px;
+	border:1px solid rgb(29, 161, 242);
+	border-radius: 9999px;
+	height: 30px;
+	padding: 0 15px;
+	line-height: 30px;
+	color: rgb(29, 161, 242);
+}
+aside .trends ul li .at div:hover {
+	background-color: rgba(29, 161, 242, 0.1);
+}
+aside .trends ul li .at section {
+	float: left;
+	display: inline-block;
+}
+aside footer div {
+	color: rgb(101, 119, 134);
+    font-size: 13px;
+    font-weight: 400; 
+    padding-top: 10px;
+}
+aside footer div a {
+	color: rgb(101, 119, 134);
+	display: inline-block;
+	margin: 5px 0;
+	padding-left: 15px;
+}
+aside footer div p {
+	margin: 5px 0;
+	padding-left: 15px;
+}
+
+/* /Trends */
